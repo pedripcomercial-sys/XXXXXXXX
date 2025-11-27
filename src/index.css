@@ -8,72 +8,72 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 5%;
-    --foreground: 0 0% 95%;
+    --background: 0 10% 6%;
+    --foreground: 15 10% 90%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 15% 10%;
+    --card-foreground: 15 10% 92%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 15% 10%;
+    --popover-foreground: 15 10% 92%;
 
-    --primary: 0 75% 45%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 355 65% 50%;
+    --primary-foreground: 15 10% 95%;
 
-    --secondary: 0 60% 25%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 355 45% 22%;
+    --secondary-foreground: 15 10% 92%;
 
-    --muted: 0 10% 15%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 355 15% 14%;
+    --muted-foreground: 15 8% 55%;
 
-    --accent: 0 70% 35%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 355 55% 38%;
+    --accent-foreground: 15 10% 95%;
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 20% 20%;
-    --input: 0 20% 20%;
-    --ring: 0 75% 45%;
+    --border: 355 20% 18%;
+    --input: 355 20% 18%;
+    --ring: 355 65% 50%;
 
     --radius: 1rem;
 
-    /* Custom Stemp colors - dark crimson palette */
-    --stemp-red: 0 75% 45%;
-    --stemp-red-dark: 0 60% 20%;
-    --stemp-red-light: 0 70% 55%;
-    --stemp-gradient-start: 0 65% 35%;
-    --stemp-gradient-end: 0 40% 8%;
+    /* Custom Stemp colors - refined crimson palette */
+    --stemp-red: 355 70% 52%;
+    --stemp-red-dark: 355 50% 25%;
+    --stemp-red-light: 355 65% 62%;
+    --stemp-gradient-start: 355 55% 35%;
+    --stemp-gradient-end: 355 30% 8%;
   }
 }
 
-/* Stemp gradient background for slides - dark atmospheric with visible gradients */
+/* Stemp gradient background for slides - refined dark atmospheric */
 .slide-gradient {
   background: 
     radial-gradient(
-      ellipse 120% 80% at 80% 20%,
-      hsla(0, 70%, 25%, 0.4) 0%,
-      hsla(0, 60%, 15%, 0.2) 40%,
-      transparent 70%
+      ellipse 120% 80% at 75% 15%,
+      hsla(355, 55%, 20%, 0.5) 0%,
+      hsla(355, 45%, 12%, 0.25) 45%,
+      transparent 75%
     ),
     radial-gradient(
-      ellipse 100% 60% at 20% 80%,
-      hsla(0, 65%, 20%, 0.35) 0%,
-      hsla(0, 50%, 12%, 0.15) 50%,
+      ellipse 90% 70% at 25% 85%,
+      hsla(355, 50%, 18%, 0.4) 0%,
+      hsla(355, 40%, 10%, 0.2) 50%,
       transparent 80%
     ),
     radial-gradient(
       circle at 50% 50%,
-      hsla(0, 40%, 10%, 0.3) 0%,
-      transparent 60%
+      hsla(355, 35%, 12%, 0.25) 0%,
+      transparent 55%
     ),
     linear-gradient(
-      160deg,
-      hsl(0 55% 14%) 0%,
-      hsl(0 45% 10%) 25%,
-      hsl(0 35% 7%) 50%,
-      hsl(0 25% 5%) 75%,
-      hsl(0 15% 4%) 100%
+      155deg,
+      hsl(355 40% 12%) 0%,
+      hsl(355 30% 9%) 30%,
+      hsl(355 20% 7%) 55%,
+      hsl(355 15% 5%) 80%,
+      hsl(355 10% 4%) 100%
     );
 }
 
