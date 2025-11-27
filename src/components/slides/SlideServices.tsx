@@ -17,19 +17,19 @@ const services = [
 
 const SlideServices = () => {
   return (
-    <div className="slide-gradient relative h-full flex items-center justify-center px-4 py-12">
-      <div className="max-w-md w-full">
-        <div className="bg-card rounded-2xl p-6 md:p-8 shadow-2xl">
-          <h2 className="text-2xl md:text-3xl font-black italic text-primary mb-6">
+    <div className="slide-gradient relative min-h-screen flex items-center justify-center px-6 py-20">
+      <div className="max-w-xl w-full">
+        <div className="bg-card rounded-3xl p-8 md:p-10 shadow-2xl">
+          <h2 className="text-3xl md:text-4xl font-black italic text-primary mb-8">
             O QUE FAZEMOS
           </h2>
-          <div className="space-y-4">
+          <div className="space-y-6">
             {services.map((service, index) => (
-              <div key={index} className="border-b border-border/50 pb-4 last:border-0 last:pb-0">
-                <h3 className="text-base md:text-lg font-bold text-primary mb-1">
+              <div key={index} className="border-b border-border/50 pb-5 last:border-0 last:pb-0">
+                <h3 className="text-lg md:text-xl font-bold text-primary mb-1">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-muted-foreground text-sm md:text-base">
                   — {service.description}
                 </p>
               </div>

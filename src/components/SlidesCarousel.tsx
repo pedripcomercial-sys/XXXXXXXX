@@ -63,16 +63,21 @@ const SlidesCarousel = () => {
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [scrollPrev, scrollNext]);
-  return <div className="relative h-screen overflow-hidden bg-[hsl(0_12%_8%)] flex items-center justify-center">
-      <div className="embla instagram-slide h-full relative" ref={emblaRef}>
+  return <div className="relative h-screen overflow-hidden">
+      <div className="embla h-full" ref={emblaRef}>
         <div className="embla__container flex h-full">
           {slides.map(slide => <div key={slide.id} className="embla__slide flex-[0_0_100%] min-w-0 h-full">
               <slide.component />
             </div>)}
         </div>
-        {/* Indicators inside the carousel */}
-        <SlideIndicators total={slides.length} current={currentSlide} onSelect={scrollTo} />
       </div>
+
+      {/* Navigation Arrows */}
+      
+      
+
+      {/* Indicators */}
+      <SlideIndicators total={slides.length} current={currentSlide} onSelect={scrollTo} />
     </div>;
 };
 export default SlidesCarousel;

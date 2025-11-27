@@ -1,53 +1,66 @@
 const SlideWave = () => {
   return (
-    <div className="absolute bottom-0 left-0 right-0 h-32 overflow-hidden pointer-events-none">
-      {/* Back wave - darkest with slow animation */}
+    <div className="absolute bottom-0 left-0 right-0 h-40 overflow-hidden pointer-events-none">
+      {/* Back wave - darkest */}
       <svg
         viewBox="0 0 1440 200"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute bottom-0 w-[200%] animate-wave-slow"
+        className="absolute bottom-0 w-full"
         preserveAspectRatio="none"
         style={{ height: '100%' }}
       >
         <path
-          d="M0 200V140C120 120 240 130 360 125C480 120 600 100 720 95C840 90 960 100 1080 110C1200 120 1320 130 1440 125C1560 120 1680 130 1800 125C1920 120 2040 100 2160 95C2280 90 2400 100 2520 110C2640 120 2760 130 2880 125V200H0Z"
-          fill="hsl(0 20% 12% / 0.4)"
+          d="M0 200V140C120 120 240 130 360 125C480 120 600 100 720 95C840 90 960 100 1080 110C1200 120 1320 130 1440 125V200H0Z"
+          fill="hsl(0 20% 10% / 0.5)"
         />
       </svg>
       
-      {/* Middle wave with medium animation */}
+      {/* Middle wave */}
       <svg
         viewBox="0 0 1440 200"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute bottom-0 w-[200%] animate-wave-medium"
+        className="absolute bottom-0 w-full"
         preserveAspectRatio="none"
-        style={{ height: '85%' }}
+        style={{ height: '90%' }}
       >
         <path
-          d="M0 200V155C180 135 360 150 540 145C720 140 900 120 1080 115C1260 110 1440 130 1620 140C1800 150 1980 135 2160 130C2340 125 2520 140 2700 145C2880 150 2880 155 2880 160V200H0Z"
-          fill="hsl(0 18% 14% / 0.6)"
+          d="M0 200V160C180 140 360 150 540 145C720 140 900 125 1080 120C1200 116 1320 125 1440 130V200H0Z"
+          fill="hsl(0 15% 12% / 0.7)"
         />
       </svg>
       
-      {/* Front wave - most visible with fast animation */}
+      {/* Front wave - most visible */}
       <svg
         viewBox="0 0 1440 200"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute bottom-0 w-[200%] animate-wave-fast"
+        className="absolute bottom-0 w-full"
         preserveAspectRatio="none"
-        style={{ height: '65%' }}
+        style={{ height: '75%' }}
       >
         <path
-          d="M0 200V165C200 150 400 165 600 158C800 150 1000 135 1200 140C1400 145 1600 160 1800 155C2000 150 2200 140 2400 145C2600 150 2800 160 2880 165V200H0Z"
-          fill="hsl(0 15% 16% / 0.8)"
+          d="M0 200V170C200 155 400 165 600 160C800 155 1000 145 1200 150C1320 153 1400 158 1440 160V200H0Z"
+          fill="hsl(0 12% 14% / 0.9)"
         />
       </svg>
 
-      {/* Solid bottom bar */}
-      <div className="absolute bottom-0 left-0 right-0 h-6 bg-[hsl(0_12%_12%)]" />
+      {/* Curved dark bottom bar */}
+      <div className="absolute bottom-0 left-0 right-0 h-12">
+        <svg
+          viewBox="0 0 1440 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-full"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0 60V30C0 13.4315 13.4315 0 30 0H1410C1426.57 0 1440 13.4315 1440 30V60H0Z"
+            fill="hsl(0 10% 10%)"
+          />
+        </svg>
+      </div>
     </div>
   );
 };

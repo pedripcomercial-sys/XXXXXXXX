@@ -109,42 +109,6 @@ All colors MUST be HSL.
 .animation-delay-400 { animation-delay: 0.4s; }
 .animation-delay-500 { animation-delay: 0.5s; }
 
-/* Wave animations */
-@keyframes wave-slow {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-@keyframes wave-medium {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
-}
-
-@keyframes wave-fast {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-.animate-wave-slow {
-  animation: wave-slow 20s linear infinite;
-}
-
-.animate-wave-medium {
-  animation: wave-medium 15s linear infinite;
-}
-
-.animate-wave-fast {
-  animation: wave-fast 10s linear infinite;
-}
-
-/* Instagram carousel slide format (4:5 aspect ratio) */
-.instagram-slide {
-  aspect-ratio: 4 / 5;
-  max-height: 100vh;
-  max-width: calc(100vh * 4 / 5);
-  margin: 0 auto;
-}
-
 @layer base {
   * {
     @apply border-border;
