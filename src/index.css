@@ -47,33 +47,48 @@ All colors MUST be HSL.
   }
 }
 
-/* Stemp gradient background for slides - refined dark atmospheric */
+/* Stemp gradient background for slides - dramatic dark atmospheric */
 .slide-gradient {
   background: 
+    /* Intense top-right glow */
     radial-gradient(
-      ellipse 120% 80% at 75% 15%,
-      hsla(355, 55%, 20%, 0.5) 0%,
-      hsla(355, 45%, 12%, 0.25) 45%,
+      ellipse 140% 100% at 85% 10%,
+      hsla(355, 70%, 28%, 0.7) 0%,
+      hsla(355, 60%, 20%, 0.45) 30%,
+      hsla(355, 50%, 14%, 0.2) 55%,
       transparent 75%
     ),
+    /* Strong bottom-left accent */
     radial-gradient(
-      ellipse 90% 70% at 25% 85%,
+      ellipse 110% 90% at 15% 90%,
+      hsla(355, 65%, 24%, 0.6) 0%,
+      hsla(355, 55%, 16%, 0.35) 40%,
+      hsla(355, 45%, 10%, 0.15) 65%,
+      transparent 85%
+    ),
+    /* Center spotlight */
+    radial-gradient(
+      ellipse 80% 60% at 50% 45%,
       hsla(355, 50%, 18%, 0.4) 0%,
-      hsla(355, 40%, 10%, 0.2) 50%,
-      transparent 80%
+      hsla(355, 40%, 12%, 0.2) 50%,
+      transparent 70%
     ),
-    radial-gradient(
-      circle at 50% 50%,
-      hsla(355, 35%, 12%, 0.25) 0%,
-      transparent 55%
+    /* Diagonal streak */
+    linear-gradient(
+      135deg,
+      hsla(355, 60%, 22%, 0.3) 0%,
+      transparent 40%,
+      transparent 60%,
+      hsla(355, 55%, 18%, 0.25) 100%
     ),
+    /* Base gradient */
     linear-gradient(
       155deg,
-      hsl(355 40% 12%) 0%,
-      hsl(355 30% 9%) 30%,
-      hsl(355 20% 7%) 55%,
-      hsl(355 15% 5%) 80%,
-      hsl(355 10% 4%) 100%
+      hsl(355 50% 16%) 0%,
+      hsl(355 42% 12%) 20%,
+      hsl(355 35% 9%) 45%,
+      hsl(355 25% 6%) 70%,
+      hsl(355 15% 4%) 100%
     );
 }
 
