@@ -6,7 +6,7 @@ const SlideHistory = () => {
           COMO SURGIU?
         </h2>
         <p className="text-xl md:text-2xl text-primary-foreground/90 leading-relaxed mb-6">
-          A <strong>Stemp</strong> surgiu em <strong>2024</strong>, fundada pelo artista e compositor{" "}
+          A <strong>Stemp</strong> surgiu em <strong>2022</strong>, fundada pelo artista e compositor{" "}
           <strong>Pedrip</strong>.
         </p>
         <p className="text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
