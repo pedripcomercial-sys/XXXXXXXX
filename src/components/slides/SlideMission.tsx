@@ -11,7 +11,7 @@ const SlideMission = () => {
           Conectar música, visão e estratégia para transformar projetos em carreira.
         </h2>
         <p className="text-lg md:text-xl text-primary-foreground/70 italic">
-          A Stemp é onde a arte encontra direção.
+          A 𝐒𝐓𝐄𝐌𝐏 é onde a arte encontra direção.
         </p>
       </div>
       <SlideWave />
