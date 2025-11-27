@@ -1,7 +1,7 @@
 const SlideWave = () => {
   return (
     <div className="absolute bottom-0 left-0 right-0 h-56 overflow-hidden pointer-events-none">
-      {/* Back wave - deep red with gradient */}
+      {/* Back wave - deep crimson with gradient */}
       <svg
         viewBox="0 0 1440 200"
         fill="none"
@@ -12,9 +12,9 @@ const SlideWave = () => {
       >
         <defs>
           <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="hsl(0 70% 35%)" stopOpacity="0.6" />
-            <stop offset="50%" stopColor="hsl(0 85% 45%)" stopOpacity="0.7" />
-            <stop offset="100%" stopColor="hsl(0 70% 35%)" stopOpacity="0.6" />
+            <stop offset="0%" stopColor="hsl(0 60% 25%)" stopOpacity="0.5" />
+            <stop offset="50%" stopColor="hsl(0 70% 35%)" stopOpacity="0.6" />
+            <stop offset="100%" stopColor="hsl(0 60% 25%)" stopOpacity="0.5" />
           </linearGradient>
         </defs>
         <path
@@ -34,10 +34,10 @@ const SlideWave = () => {
       >
         <defs>
           <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="hsl(0 50% 28%)" stopOpacity="0.75" />
-            <stop offset="30%" stopColor="hsl(0 65% 38%)" stopOpacity="0.8" />
-            <stop offset="70%" stopColor="hsl(0 55% 32%)" stopOpacity="0.75" />
-            <stop offset="100%" stopColor="hsl(0 50% 28%)" stopOpacity="0.75" />
+            <stop offset="0%" stopColor="hsl(0 40% 18%)" stopOpacity="0.7" />
+            <stop offset="30%" stopColor="hsl(0 55% 25%)" stopOpacity="0.75" />
+            <stop offset="70%" stopColor="hsl(0 45% 20%)" stopOpacity="0.7" />
+            <stop offset="100%" stopColor="hsl(0 40% 18%)" stopOpacity="0.7" />
           </linearGradient>
         </defs>
         <path
@@ -57,11 +57,11 @@ const SlideWave = () => {
       >
         <defs>
           <linearGradient id="waveGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="hsl(0 40% 22%)" stopOpacity="0.85" />
-            <stop offset="25%" stopColor="hsl(0 55% 30%)" stopOpacity="0.9" />
-            <stop offset="50%" stopColor="hsl(0 45% 25%)" stopOpacity="0.85" />
-            <stop offset="75%" stopColor="hsl(0 55% 30%)" stopOpacity="0.9" />
-            <stop offset="100%" stopColor="hsl(0 40% 22%)" stopOpacity="0.85" />
+            <stop offset="0%" stopColor="hsl(0 30% 12%)" stopOpacity="0.85" />
+            <stop offset="25%" stopColor="hsl(0 45% 18%)" stopOpacity="0.9" />
+            <stop offset="50%" stopColor="hsl(0 35% 15%)" stopOpacity="0.85" />
+            <stop offset="75%" stopColor="hsl(0 45% 18%)" stopOpacity="0.9" />
+            <stop offset="100%" stopColor="hsl(0 30% 12%)" stopOpacity="0.85" />
           </linearGradient>
         </defs>
         <path
@@ -70,7 +70,7 @@ const SlideWave = () => {
         />
       </svg>
 
-      {/* Front wave - most visible with shimmer */}
+      {/* Front wave - darkest with shimmer */}
       <svg
         viewBox="0 0 1440 200"
         fill="none"
@@ -81,11 +81,11 @@ const SlideWave = () => {
       >
         <defs>
           <linearGradient id="waveGradient4" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="hsl(0 35% 18%)" stopOpacity="0.95" />
-            <stop offset="20%" stopColor="hsl(0 45% 22%)" stopOpacity="1" />
-            <stop offset="50%" stopColor="hsl(0 40% 20%)" stopOpacity="0.95" />
-            <stop offset="80%" stopColor="hsl(0 45% 22%)" stopOpacity="1" />
-            <stop offset="100%" stopColor="hsl(0 35% 18%)" stopOpacity="0.95" />
+            <stop offset="0%" stopColor="hsl(0 25% 8%)" stopOpacity="0.95" />
+            <stop offset="20%" stopColor="hsl(0 35% 12%)" stopOpacity="1" />
+            <stop offset="50%" stopColor="hsl(0 30% 10%)" stopOpacity="0.95" />
+            <stop offset="80%" stopColor="hsl(0 35% 12%)" stopOpacity="1" />
+            <stop offset="100%" stopColor="hsl(0 25% 8%)" stopOpacity="0.95" />
           </linearGradient>
         </defs>
         <path
@@ -105,9 +105,9 @@ const SlideWave = () => {
         >
           <defs>
             <linearGradient id="bottomGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="hsl(0 30% 12%)" />
-              <stop offset="50%" stopColor="hsl(0 35% 15%)" />
-              <stop offset="100%" stopColor="hsl(0 30% 12%)" />
+              <stop offset="0%" stopColor="hsl(0 20% 5%)" />
+              <stop offset="50%" stopColor="hsl(0 25% 7%)" />
+              <stop offset="100%" stopColor="hsl(0 20% 5%)" />
             </linearGradient>
           </defs>
           <path

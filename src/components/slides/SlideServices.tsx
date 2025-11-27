@@ -1,4 +1,5 @@
 import SlideWave from "../SlideWave";
+import BackgroundElements from "../BackgroundElements";
 
 const services = [
   {
@@ -18,15 +19,16 @@ const services = [
 const SlideServices = () => {
   return (
     <div className="slide-gradient relative min-h-screen flex items-center justify-center px-6 py-20">
-      <div className="max-w-xl w-full">
-        <div className="bg-card rounded-3xl p-8 md:p-10 shadow-2xl">
-          <h2 className="text-3xl md:text-4xl font-black italic text-primary mb-8">
+      <BackgroundElements />
+      <div className="max-w-xl w-full relative z-10">
+        <div className="bg-card/90 backdrop-blur-sm rounded-3xl p-8 md:p-10 shadow-2xl border border-stemp-red/20">
+          <h2 className="text-3xl md:text-4xl font-black italic text-stemp-red mb-8">
             O QUE FAZEMOS
           </h2>
           <div className="space-y-6">
             {services.map((service, index) => (
-              <div key={index} className="border-b border-border/50 pb-5 last:border-0 last:pb-0">
-                <h3 className="text-lg md:text-xl font-bold text-primary mb-1">
+              <div key={index} className="border-b border-stemp-red/20 pb-5 last:border-0 last:pb-0">
+                <h3 className="text-lg md:text-xl font-bold text-stemp-red mb-1">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground text-sm md:text-base">
