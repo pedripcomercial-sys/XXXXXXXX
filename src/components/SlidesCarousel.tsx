@@ -7,7 +7,7 @@ import SlideVision from "./slides/SlideVision";
 import SlideHistory from "./slides/SlideHistory";
 import SlideMission from "./slides/SlideMission";
 import SlideContact from "./slides/SlideContact";
-import ExportPPTXButton from "./ExportPPTXButton";
+import ExportPNGButton from "./ExportPNGButton";
 const slides = [{
   id: 1,
   component: SlideHero
@@ -65,7 +65,7 @@ const SlidesCarousel = () => {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [scrollPrev, scrollNext]);
   return <div className="relative h-screen overflow-hidden">
-      <ExportPPTXButton />
+      <ExportPNGButton emblaApi={emblaApi} />
       <div className="embla h-full" ref={emblaRef}>
         <div className="embla__container flex h-full">
           {slides.map(slide => <div key={slide.id} className="embla__slide flex-[0_0_100%] min-w-0 h-full">
