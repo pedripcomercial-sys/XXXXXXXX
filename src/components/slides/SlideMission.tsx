@@ -13,7 +13,7 @@ const SlideMission = () => {
           Conectar música, visão e estratégia para transformar projetos em <span className="text-stemp-red">carreira</span>.
         </h2>
         <p className="text-lg md:text-xl text-primary-foreground/60 italic">
-          A <span className="text-stemp-red">𝐒𝐓𝐄𝐌𝐏</span> é onde a arte encontra direção.
+          A <span className="text-stemp-red">𝐒𝐓𝐄𝐌𝐏 <span className="font-light tracking-wider text-primary-foreground/50">Entertainment</span></span> é onde a arte encontra direção.
         </p>
       </div>
       <SlideWave />
