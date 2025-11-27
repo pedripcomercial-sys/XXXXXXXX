@@ -8,7 +8,7 @@ const SlideHero = () => {
       </p>
       <h1>
         <span className="text-5xl md:text-7xl lg:text-8xl font-black italic text-primary-foreground tracking-tight">
-          STEMP
+          𝐒𝐓𝐄𝐌𝐏
         </span>
         <span className="block text-xl md:text-2xl lg:text-3xl font-light tracking-[0.5em] text-primary-foreground/90 mt-2">
           ENTERTAINMENT
