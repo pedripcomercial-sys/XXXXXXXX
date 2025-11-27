@@ -10,7 +10,7 @@ const SlideVision = () => {
           NOSSA VISÃO
         </h2>
         <p className="text-xl md:text-2xl text-primary-foreground/85 leading-relaxed mb-6">
-          A <strong className="text-stemp-red">𝐒𝐓𝐄𝐌𝐏</strong> existe para firmar a música do artista no mundo,
+          A <strong className="text-stemp-red">𝐒𝐓𝐄𝐌𝐏 <span className="font-light tracking-wider text-primary-foreground/70">Entertainment</span></strong> existe para firmar a música do artista no mundo,
           tornando sua obra <strong className="text-stemp-red-light">duradoura</strong>, <strong className="text-stemp-red-light">marcante</strong> e <strong className="text-stemp-red-light">atemporal</strong>.
         </p>
         <p className="text-lg md:text-xl text-primary-foreground/60 italic">
