@@ -47,16 +47,59 @@ All colors MUST be HSL.
   }
 }
 
-/* Stemp gradient background for slides */
+/* Stemp gradient background for slides - flowing river effect */
 .slide-gradient {
   background: linear-gradient(
-    180deg,
-    hsl(0 85% 55%) 0%,
-    hsl(0 85% 50%) 25%,
-    hsl(0 70% 40%) 50%,
-    hsl(0 55% 30%) 75%,
-    hsl(0 40% 22%) 100%
+    165deg,
+    hsl(0 90% 58%) 0%,
+    hsl(0 85% 52%) 15%,
+    hsl(0 80% 48%) 30%,
+    hsl(0 75% 42%) 45%,
+    hsl(0 65% 35%) 60%,
+    hsl(0 55% 28%) 75%,
+    hsl(0 45% 22%) 90%,
+    hsl(0 35% 16%) 100%
   );
+}
+
+/* Wave animations for flowing effect */
+@keyframes wave-flow-slow {
+  0%, 100% {
+    transform: translateX(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-15px) scaleY(1.05);
+  }
+}
+
+@keyframes wave-flow-medium {
+  0%, 100% {
+    transform: translateX(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(20px) scaleY(0.95);
+  }
+}
+
+@keyframes wave-flow-fast {
+  0%, 100% {
+    transform: translateX(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-10px) scaleY(1.02);
+  }
+}
+
+.animate-wave-slow {
+  animation: wave-flow-slow 8s ease-in-out infinite;
+}
+
+.animate-wave-medium {
+  animation: wave-flow-medium 6s ease-in-out infinite;
+}
+
+.animate-wave-fast {
+  animation: wave-flow-fast 4s ease-in-out infinite;
 }
 
 /* Animations */
