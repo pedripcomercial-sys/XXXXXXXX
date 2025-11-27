@@ -1,29 +1,32 @@
 import SlideWave from "../SlideWave";
+
 const SlideContact = () => {
-  return <div className="slide-gradient relative min-h-screen flex items-center justify-center px-6 py-20">
-      <div className="max-w-xl w-full">
-        <div className="bg-card rounded-3xl p-8 md:p-10 shadow-2xl">
-          <h2 className="text-3xl md:text-4xl font-black text-primary mb-6">
+  return (
+    <div className="slide-gradient relative h-full flex items-center justify-center px-4 py-12">
+      <div className="max-w-md w-full">
+        <div className="bg-card rounded-2xl p-6 md:p-8 shadow-2xl">
+          <h2 className="text-2xl md:text-3xl font-black text-primary mb-4">
             COMO CONTRATAR?
           </h2>
-          <p className="text-base mb-6 text-muted-foreground md:text-base">Para nos             <span className="text-primary font-semibold">contratar</span>​,  basta enviar um pedido de orçamento via Direct ou e-mail.                            
+          <p className="text-sm md:text-base mb-4 text-muted-foreground">
+            Para nos <span className="text-primary font-semibold">contratar</span>, basta enviar um pedido de orçamento via Direct ou e-mail.
           </p>
-          <a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-primary font-bold text-xl md:text-2xl hover:opacity-80 transition-opacity" href="https://www.instagram.com/stmp.ent/">
-            
-            
-
-
-            
-
-stempentertainment@gmail.com
-          
+          <a 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="inline-flex items-center gap-2 text-primary font-bold text-lg md:text-xl hover:opacity-80 transition-opacity break-all" 
+            href="mailto:stempentertainment@gmail.com"
+          >
+            stempentertainment@gmail.com
           </a>
-          <p className="text-muted-foreground text-sm md:text-base mt-6">
+          <p className="text-muted-foreground text-sm mt-4">
             Após o envio, <span className="text-primary font-semibold">entraremos</span> em contato tirando todas as dúvidas.
           </p>
         </div>
       </div>
       <SlideWave />
-    </div>;
+    </div>
+  );
 };
+
 export default SlideContact;
