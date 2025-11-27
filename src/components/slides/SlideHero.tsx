@@ -12,8 +12,8 @@ const SlideHero = () => {
         <span className="text-5xl md:text-7xl lg:text-8xl font-black italic text-stemp-red tracking-tight animate-glow">
           𝐒𝐓𝐄𝐌𝐏
         </span>
-        <span className="block text-xl md:text-2xl lg:text-3xl font-light tracking-[0.5em] text-primary-foreground/80 mt-2">
-          ENTERTAINMENT
+        <span className="block text-2xl md:text-3xl lg:text-4xl font-black italic text-stemp-red/80 tracking-widest mt-2">
+          𝐄𝐧𝐭𝐞𝐫𝐭𝐚𝐢𝐧𝐦𝐞𝐧𝐭
         </span>
       </h1>
       <SlideWave />
