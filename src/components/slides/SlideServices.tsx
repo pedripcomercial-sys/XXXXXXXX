@@ -1,3 +1,5 @@
+import SlideWave from "../SlideWave";
+
 const services = [
   {
     title: "Label Management",
@@ -13,21 +15,21 @@ const services = [
   },
 ];
 
-const ServicesSection = () => {
+const SlideServices = () => {
   return (
-    <section className="py-20 px-6">
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-card rounded-3xl p-8 md:p-12 shadow-2xl animate-scale-in opacity-0">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black italic text-primary mb-10">
+    <div className="slide-gradient relative min-h-screen flex items-center justify-center px-6 py-20">
+      <div className="max-w-xl w-full">
+        <div className="bg-card rounded-3xl p-8 md:p-10 shadow-2xl">
+          <h2 className="text-3xl md:text-4xl font-black italic text-primary mb-8">
             O QUE FAZEMOS
           </h2>
-          <div className="space-y-8">
+          <div className="space-y-6">
             {services.map((service, index) => (
-              <div key={index} className="border-b border-border/50 pb-6 last:border-0 last:pb-0">
-                <h3 className="text-xl md:text-2xl font-bold text-primary mb-2">
+              <div key={index} className="border-b border-border/50 pb-5 last:border-0 last:pb-0">
+                <h3 className="text-lg md:text-xl font-bold text-primary mb-1">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground text-base md:text-lg">
+                <p className="text-muted-foreground text-sm md:text-base">
                   — {service.description}
                 </p>
               </div>
@@ -35,8 +37,9 @@ const ServicesSection = () => {
           </div>
         </div>
       </div>
-    </section>
+      <SlideWave />
+    </div>
   );
 };
 
-export default ServicesSection;
+export default SlideServices;
