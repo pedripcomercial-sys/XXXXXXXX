@@ -1,4 +1,3 @@
-import { Facebook } from "lucide-react";
 import SlideWave from "../SlideWave";
 const SlideContact = () => {
   return <div className="slide-gradient relative min-h-screen flex items-center justify-center px-6 py-20">
@@ -7,10 +6,10 @@ const SlideContact = () => {
           <h2 className="text-3xl md:text-4xl font-black text-primary mb-6">
             COMO CONTRATAR?
           </h2>
-          <p className="text-base mb-6 text-muted-foreground md:text-base">Para nos contratar​, basta enviar um pedido de orçamento via Direct ou e-mail.<span className="text-primary font-semibold">contratar</span>​,  basta enviar um pedido de orçamento via Direct ou e-mail.    
+          <p className="text-base mb-6 text-muted-foreground md:text-base">Para nos             <span className="text-primary font-semibold">contratar</span>​,  basta enviar um pedido de orçamento via Direct ou e-mail.                            
           </p>
           <a target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-primary font-bold text-xl md:text-2xl hover:opacity-80 transition-opacity" href="https://www.instagram.com/stmp.ent/">
-            <Facebook className="w-7 h-7" />
+            
             
 
 
